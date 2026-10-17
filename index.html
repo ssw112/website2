@@ -9,6 +9,9 @@
 	<meta property="og:description" content="Site under construction. Contact: contact@beware.today" />
 	<meta property="og:url" content="https://beware.today/" />
 	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://beware.today/assets/logo-512.png" />
+	<link rel="icon" type="image/png" href="/assets/favicon.png" />
+	<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
 	<style>
 		:root {
 			--bg: #0f1115;
@@ -29,13 +32,8 @@
 			padding: 2rem 1.25rem;
 		}
 		main { max-width: 560px; width: 100%; }
-		.kicker {
-			color: var(--accent);
-			font-size: .8rem;
-			letter-spacing: .22em;
-			text-transform: uppercase;
-			margin-bottom: 1rem;
-		}
+		.logo { display: block; width: 180px; height: auto; margin-bottom: 1.75rem; }
+		.logo-light { display: none; }
 		h1 { font-size: 2rem; font-weight: 650; line-height: 1.25; margin-bottom: 1rem; }
 		p.lead { color: var(--muted); }
 		footer {
@@ -49,12 +47,15 @@
 		footer a:hover { color: var(--accent); }
 		@media (prefers-color-scheme: light) {
 			:root { --bg: #faf8f4; --text: #1c1e24; --muted: #5c6470; --line: #e3ded4; }
+			.logo-dark { display: none; }
+			.logo-light { display: block; }
 		}
 	</style>
 </head>
 <body>
 	<main>
-		<div class="kicker">beware.today</div>
+		<img class="logo logo-dark" src="/assets/logo-dark.png" alt="beware." width="1156" height="218" />
+		<img class="logo logo-light" src="/assets/logo-light.png" alt="beware." width="1156" height="218" />
 		<h1>We're working on it.</h1>
 		<p class="lead">This site is under construction. Check back soon.</p>
 		<footer>
